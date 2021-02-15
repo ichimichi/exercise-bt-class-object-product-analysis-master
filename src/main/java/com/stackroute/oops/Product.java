@@ -5,37 +5,47 @@ package com.stackroute.oops;
     It contains parameterized constructor and Getters/Setters
  */
 public class Product {
+    private int productCode;
+    private String name;
+    private double price;
+    private String Category;
 
     public Product(int productCode, String name, double price, String category) {
+        this.productCode = productCode;
+        this.name = name;
+        this.price = price;
+        Category = category;
     }
 
     public int getProductCode() {
-        return -1;
+        return productCode;
     }
 
     public void setProductCode(int productCode) {
-
+        this.productCode = productCode;
     }
 
     public String getName() {
-        return null;
+        return name;
     }
 
     public void setName(String name) {
+        this.name = name;
     }
 
     public double getPrice() {
-        return -1;
+        return price;
     }
 
     public void setPrice(double price) {
+        this.price = price;
     }
 
     public String getCategory() {
-        return null;
+        return Category;
     }
 
     public void setCategory(String category) {
-
+        Category = category;
     }
 }
